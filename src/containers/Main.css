@@ -1,0 +1,13 @@
+.img-fluid {
+  height: 100vh;
+  width: 100%;
+}
+
+.actions {
+  width: 50%;
+  height: 25%;
+}
+
+.test {
+  width: 100%;
+}
