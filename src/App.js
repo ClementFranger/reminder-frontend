@@ -7,10 +7,10 @@ import Top from "./containers/Top";
 function App() {
 
   return (
-    <Container fluid>
+    <>
       <Top />
       <Routes />
-    </Container>
+    </>
   );
 }
 
