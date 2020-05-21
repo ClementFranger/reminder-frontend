@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Card, Button, ListGroup, Navbar } from "react-bootstrap";
 import Today from "../components/navbar/Today";
-import Add from "../components/navbar/Add";
+import AddButton from "../components/navbar/AddButton";
 
 export default function Top() {
 
@@ -9,7 +9,7 @@ export default function Top() {
     <>
       <Navbar bg="dark" variant="dark" className="justify-content-between" collapseOnSelect>
         <Today/>
-        <Add/>
+        <AddButton/>
       </Navbar>
     </>
   );

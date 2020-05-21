@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Card, Button, ListGroup } from "react-bootstrap";
-import "./Main.css";
+import "./Reminders.css";
 import { API } from "aws-amplify";
 
-export default function Main() {
+export default function Reminders() {
 
   const [reminders, setReminders] = useState([]);
 
@@ -12,7 +12,12 @@ export default function Main() {
       const reminders = await getReminders();
       setReminders(reminders)
     }
+
     loadReminders()
+    setInterval(() => {
+      loadReminders()
+    }, 3600000);
+
   }, []);
 
   function getReminders() {
@@ -22,8 +27,8 @@ export default function Main() {
   function renderReminders() {
     return reminders.map((reminder, i) =>
       <ListGroup.Item key={reminder.id}>
-          {reminder.description}
-        </ListGroup.Item>
+        {reminder.description}
+      </ListGroup.Item>
     );
   }
 
