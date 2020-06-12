@@ -2,6 +2,11 @@ a:focus {
   outline:none
 }
 
+.btn, .form-label, .form-control {
+  font-size: 5vh;
+}
+
+
 .align-me {
   display: flex;
   align-items: center;

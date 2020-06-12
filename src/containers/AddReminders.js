@@ -35,7 +35,7 @@ export default function AddReminders() {
 
   return (
     <>
-      <Form onSubmit={handleSubmit}>
+      <Form className="addReminder" onSubmit={handleSubmit}>
         <Form.Group controlId="description">
           <Form.Label>Description</Form.Label>
           <Form.Control autoFocus value={description} onChange={e => setDescription(e.target.value)} size="lg"/>

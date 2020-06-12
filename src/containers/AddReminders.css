@@ -1,3 +1,7 @@
-.form-control-lg {
-  font-size: 64px;
+.addReminder {
+  margin-left:10px;
+}
+
+.form-label {
+  font-weight: bold;
 }
