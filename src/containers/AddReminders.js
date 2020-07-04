@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { Card, Button, ListGroup, Form } from "react-bootstrap";
+import React, { useState } from "react";
+import { Button, Form } from "react-bootstrap";
 import "./AddReminders.css";
 import { API } from "aws-amplify";
 import { useHistory } from "react-router-dom";
@@ -17,7 +17,7 @@ export default function AddReminders() {
   }
 
   function validateFrequency(f) {
-    return (f == parseInt(f) && f >= 0)
+    return (f === parseInt(f) && f >= 0)
   }
 
   function handleSubmit() {
@@ -27,7 +27,7 @@ export default function AddReminders() {
 
   function createReminder(reminder) {
     try {
-      API.post("reminder", "/reminders", {body: reminder});
+      API.post("reminder", "/reminder", {body: reminder});
     } catch (e) {
       alert(e.message);
     }

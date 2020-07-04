@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import { Navbar, Nav, Image } from "react-bootstrap";
+import { Nav } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import moment from 'moment'
-import localization from 'moment/locale/fr';
 
 export default function Today() {
 

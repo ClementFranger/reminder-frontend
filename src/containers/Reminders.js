@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Card, Button, ListGroup } from "react-bootstrap";
+import { ListGroup } from "react-bootstrap";
 import "./Reminders.css";
 import { API } from "aws-amplify";
 
@@ -21,7 +21,7 @@ export default function Reminders() {
   }, []);
 
   function getReminders() {
-    return API.get("reminder", "/reminders/today");
+    return API.get("reminder", "/reminder/today");
   }
 
   function renderReminders() {
