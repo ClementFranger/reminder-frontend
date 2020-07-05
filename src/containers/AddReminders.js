@@ -17,7 +17,7 @@ export default function AddReminders() {
   }
 
   function validateFrequency(f) {
-    return (f === parseInt(f) && f >= 0)
+    return (f == parseInt(f) && f >= 0)
   }
 
   function handleSubmit() {
