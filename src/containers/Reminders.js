@@ -21,7 +21,7 @@ export default function Reminders() {
   }, []);
 
   function getReminders() {
-    return API.get("reminder", "/reminder/today");
+    return API.get("reminder", "/reminder");
   }
 
   function renderReminders() {
